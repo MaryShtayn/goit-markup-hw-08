@@ -1,0 +1,35 @@
+.team {
+  background-color: var(--accent-bgd-clr);
+  letter-spacing: 0.03em;
+}
+
+.team__list {
+  @include list(flex, 30px, row, null);
+  justify-content: center;
+}
+.team__item {
+  padding: 0;
+  margin: 0;
+  @include font(var(--main-font), 16px, 500, calc(19 / 16), 0.03em, var(--main-clr));
+
+  background: #ffffff;
+  box-shadow: var(--team-card-and-modal);
+  border-radius: 0px 0px 4px 4px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.member-card {
+  padding: 30px 32px;
+  text-align: center;
+}
+.member-card__title {
+  margin-bottom: 10px;
+}
+.member-card__txt {
+  margin-bottom: 16px;
+  color: var(--secondary-clr);
+}
+/*Socials icons*/

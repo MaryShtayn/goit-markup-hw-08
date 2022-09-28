@@ -1,0 +1,26 @@
+.logo {
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  text-decoration: none;
+  @include font(var(--secondary-font), 26px, 700, calc(31 / 26), 0.03em, var(--main-clr));
+}
+.logo__web--blue {
+  color: var(--accent-clr);
+}
+
+.logo__footer {
+  display: block;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  text-decoration: none;
+  @include font(
+    var(--secondary-font),
+    26px,
+    700,
+    calc(31 / 26),
+    0.03em,
+    var(--secondary-accent-clr)
+  );
+}

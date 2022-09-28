@@ -1,0 +1,34 @@
+.hero__title {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-top: 0;
+  padding: 0;
+  width: 696px;
+  text-transform: uppercase;
+  @include font(var(--main-font), 44px, 900, calc(60 / 44), 0.06em, var(--secondary-accent-clr));
+}
+
+.features__title--hidden {
+  @extend %visually-hidden;
+}
+
+.services__title {
+  margin-bottom: 50px;
+  @include font(var(--main-font), 36px, 700, calc(42.19 / 36), 0.03em, var(--main-clr));
+}
+
+.team__title {
+  margin-bottom: 50px;
+  @include font(var(--main-font), 36px, 700, calc(42.19 / 36), 0.03em, var(--main-clr));
+}
+
+.clients__title {
+  margin-bottom: 50px;
+  text-align: center;
+  @include font(var(--main-font), 36px, 700, calc(42.19 / 36), 0.03em, var(--main-clr));
+}
+
+.portfolio__title {
+  @extend %visually-hidden;
+}

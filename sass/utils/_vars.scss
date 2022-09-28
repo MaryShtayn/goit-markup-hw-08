@@ -1,0 +1,30 @@
+:root {
+  /* Color */
+  --main-clr: #212121; /* black titles and subtitles*/
+  --secondary-clr: #757575; /* grey texts and little subtitles*/
+  --accent-clr: #2196f3; /* hover and focus color, btn clr*/
+  --btn-accent-bg-cl: #188ce8; /* hover and focus btn clr*/
+  --secondary-accent-clr: #ffffff; /* white for texts and bkgd*/
+  --main-bgd-clr: #f5f5f5;
+  --secondary-bgd-clr: #2f303a; /* dark bkgd of hero and footer*/
+  --accent-bgd-clr: #f5f4fa;
+  --header-boarder-clr: #ececec;
+  --icons-clr: #afb1b8;
+  --icons-footer-bgd-clr: rgba(255, 255, 255, 0.1);
+  --contacts-link-clr: rgba(255, 255, 255, 0.6);
+  --border-clr: rgba(255, 255, 255, 0.3); /*Input field clr*/
+  --modal-close-btn-border: rgba(0, 0, 0, 0.1);
+  --placeholder-clr: rgba(117, 117, 117, 0.5);
+
+  // Shadows
+  --team-card-and-modal: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  --portfolio-filtr-hover: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  --portfolio-card-hover: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  --subscribe-btn: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  /* Font */
+  --main-font: Roboto;
+  --secondary-font: Raleway;
+}

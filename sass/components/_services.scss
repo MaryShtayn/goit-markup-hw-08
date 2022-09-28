@@ -1,0 +1,32 @@
+.services {
+  @include section(0px, 94px, null);
+}
+
+.services__list {
+  justify-content: center;
+  @include list(flex, 30px, row, null);
+}
+
+.services__item {
+  position: relative;
+}
+
+.overlay-box {
+  position: relative;
+  display: block;
+}
+.overlay__title {
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include font(var(--main-font), 14px, 700, calc(16 / 14), 0.03em, var(--secondary-accent-clr));
+  text-transform: uppercase;
+  background-color: var(--secondary-bgd-clr);
+  opacity: 0.8;
+}
