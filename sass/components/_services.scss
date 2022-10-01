@@ -1,7 +1,8 @@
-@media screen and (max-width: 1199px) {
-  .services {
+.services {
+  @include section(0px, 94px, null);
+
+  @media screen and (max-width: 1199.5px) {
     display: none;
-    @include section(0px, 94px, null);
   }
 }
 

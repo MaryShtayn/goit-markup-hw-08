@@ -17,6 +17,7 @@
   flex-wrap: $fw;
 }
 
+// (quantity of gaps between columns, size of gaps, quantity of items in one row)
 @mixin item($q, $g, $q-item) {
   flex-basis: calc((100% - #{$q}*#{$g}) / #{$q-item});
 }

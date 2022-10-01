@@ -39,6 +39,7 @@
   @include font(var(--main-font), 14px, 700, calc(16.41 / 14), 0.03em, var(--main-clr));
   text-transform: uppercase;
   margin-bottom: 10px;
+
   @media screen and(max-width: 767.5px) {
     text-align: center;
   }
