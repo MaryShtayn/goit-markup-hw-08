@@ -19,8 +19,7 @@
 }
 .subscribe__btn {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  @include display-centered(center, space-around);
   padding: 10px 28px;
   min-width: 216px;
   min-height: 50px;

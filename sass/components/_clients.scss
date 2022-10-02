@@ -2,7 +2,7 @@
   @include section(60px, 60px, var(--secondary-accent-clr));
 
   @media screen and (min-width: 1200px) {
-    @include section(94px, 94px, var(--accent-bgd-clr));
+    @include section(94px, 94px, var(--secondary-accent-clr));
   }
 }
 
@@ -18,7 +18,7 @@
 
   @media screen and (min-width: 1200px) {
     @include list(flex, 30px, row, null);
-    align-items: center;
+    text-align: center;
   }
 }
 
@@ -39,8 +39,7 @@
 }
 .clients__link {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  @include display-centered(center, center);
   width: 100%;
   height: 100%;
   border-radius: 4px;

@@ -7,7 +7,8 @@
 }
 
 .services__list {
-  justify-content: center;
+  @include display-centered(null, center);
+
   @include list(flex, 30px, row, null);
 }
 
@@ -17,8 +18,8 @@
 
 .overlay-box {
   position: relative;
-  display: block;
 }
+
 .overlay__title {
   position: absolute;
   width: 100%;
@@ -26,8 +27,8 @@
   bottom: 0;
   left: 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
+
+  @include display-centered(center, center);
 
   @include font(var(--main-font), 14px, 700, calc(16 / 14), 0.03em, var(--secondary-accent-clr));
   text-transform: uppercase;

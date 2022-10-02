@@ -36,8 +36,7 @@
   top: 8px;
   right: 8px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  @include display-centered(center, center);
   width: 30px;
   height: 30px;
   border: 1px solid var(--modal-close-btn-border);

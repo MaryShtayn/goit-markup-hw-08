@@ -1,14 +1,16 @@
 @import './base/reset';
 @import './base/container';
 
-@import './utils/visually-hidden';
 @import './utils/vars';
+@import './utils/normalize';
 @import './utils/placeholder';
 @import './utils/mixin';
+@import './utils/visually-hidden';
 
 @import './components/header';
 @import './components/logo';
 @import './components/contacts';
+@import './components/menu';
 @import './components/buttons';
 @import './components/section-title';
 @import './components/hero';

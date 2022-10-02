@@ -13,12 +13,13 @@
 .team__list {
   width: 100%;
   @include list(flex, 30px, column, null);
+  @include display-centered(null, center);
 
   @media screen and(min-width: 768px) {
     @include list(flex, 30px, row, wrap);
   }
-  justify-content: center;
 }
+
 .team__item {
   max-width: 450px;
   // height: 622px;
@@ -53,4 +54,3 @@
   margin-bottom: 16px;
   color: var(--secondary-clr);
 }
-/*Socials icons*/

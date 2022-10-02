@@ -11,14 +11,14 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-    />
+    /> -->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="header-container container">
         <a href="./index.html" lang="en" class="logo"
           ><span class="logo__web--blue">Web</span>Studio</a
@@ -56,70 +56,78 @@
           </li>
         </ul>
       </div>
+
+      <button
+        type="button"
+        class="menu-btn .js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg width="40" height="40"><use href="./images/icons.svg#menu-open"></use></svg>
+      </button>
     </header>
-    <main> -->
-    <!--Головна сторінка з бекграундом та кнопкою-->
-    <!-- <section class="hero hero__overlay">
-        <div class="container">
+    <main>
+      <!-- <section class="hero hero__overlay">
+        <div class="hero-container container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="hero__btn" data-modal-open>Замовити послугу</button>
         </div>
       </section> -->
 
-    <section class="features">
-      <div class="container">
-        <h2 class="features__title--hidden">Features</h2>
-        <ul class="features__list">
-          <li class="features__item">
-            <div class="icon-wrap">
-              <svg class="icon-wrap__icon" width="70" height="70">
-                <use href="./images/icons.svg#antenna"></use>
-              </svg>
-            </div>
-            <h3 class="features__subtitle">увага до деталей</h3>
-            <p class="features__text">
-              Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
-            </p>
-          </li>
-          <li class="features__item">
-            <div class="icon-wrap">
-              <svg class="icon-wrap__icon" width="70" height="70">
-                <use href="./images/icons.svg#clock"></use>
-              </svg>
-            </div>
-            <h3 class="features__subtitle">пунктуальність</h3>
-            <p class="features__text">
-              Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
-            </p>
-          </li>
-          <li class="features__item">
-            <div class="icon-wrap">
-              <svg class="icon-wrap__icon" width="70" height="70">
-                <use href="./images/icons.svg#diagram"></use>
-              </svg>
-            </div>
-            <h3 class="features__subtitle">планування</h3>
-            <p class="features__text">
-              Так само консультація з широким активом значною мірою зумовлює.
-            </p>
-          </li>
-          <li class="features__item">
-            <div class="icon-wrap">
-              <svg class="icon-wrap__icon" width="70" height="70">
-                <use href="./images/icons.svg#astronaut"></use>
-              </svg>
-            </div>
-            <h3 class="features__subtitle">сучасні технології</h3>
-            <p class="features__text">
-              Значимість цих проблем настільки очевидна, що реалізація планових завдань.
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
+      <section class="features">
+        <div class="features-container container">
+          <h2 class="features__title--hidden">Features</h2>
+          <ul class="features__list">
+            <li class="features__item">
+              <div class="icon-wrap">
+                <svg class="icon-wrap__icon" width="70" height="70">
+                  <use href="./images/icons.svg#antenna"></use>
+                </svg>
+              </div>
+              <h3 class="features__subtitle">увага до деталей</h3>
+              <p class="features__text">
+                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+              </p>
+            </li>
+            <li class="features__item">
+              <div class="icon-wrap">
+                <svg class="icon-wrap__icon" width="70" height="70">
+                  <use href="./images/icons.svg#clock"></use>
+                </svg>
+              </div>
+              <h3 class="features__subtitle">пунктуальність</h3>
+              <p class="features__text">
+                Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
+              </p>
+            </li>
+            <li class="features__item">
+              <div class="icon-wrap">
+                <svg class="icon-wrap__icon" width="70" height="70">
+                  <use href="./images/icons.svg#diagram"></use>
+                </svg>
+              </div>
+              <h3 class="features__subtitle">планування</h3>
+              <p class="features__text">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
+            </li>
+            <li class="features__item">
+              <div class="icon-wrap">
+                <svg class="icon-wrap__icon" width="70" height="70">
+                  <use href="./images/icons.svg#astronaut"></use>
+                </svg>
+              </div>
+              <h3 class="features__subtitle">сучасні технології</h3>
+              <p class="features__text">
+                Значимість цих проблем настільки очевидна, що реалізація планових завдань.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-    <section class="services">
-        <div class="container">
+      <section class="services">
+        <div class="services-container container">
           <h2 class="services__title centered">Чим ми займаємося</h2>
           <ul class="services__list">
             <li class="services__item">
@@ -587,6 +595,7 @@
       </div>
     </footer> -->
 
+    <!-- Modal -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal__close-btn" data-modal-close>
@@ -671,6 +680,38 @@
         </form>
       </div>
     </div>
+
+    <!-- Mobile-menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg width="40" height="40"><use href="./images/icons.svg#menu-close"></use></svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li><a href="" class="link">Студія</a></li>
+        <li><a href="" class="link">Портфоліо</a></li>
+        <li><a href="" class="link">Контакти</a></li>
+      </ul>
+      <ul class="mobile-menu">
+        <li><a href="" class="link">+38 096 111 11 11</a></li>
+        <li><a href="" class="link">info@devstudio.com</a></li>
+      </ul>
+      <ul class="mobile-menu">
+        <li><a href="" class="link">Instagram</a></li>
+        <li><a href="" class="link">Twitter</a></li>
+        <li><a href="" class="link">Facebook</a></li>
+        <li><a href="" class="link">LinkedIn</a></li>
+      </ul>
+    </div>
+
     <script src="./js/modal.js"></script>
+    <!-- Mobile menu script -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -30,3 +30,8 @@
   letter-spacing: $ls;
   color: $fc;
 }
+
+@mixin display-centered($ai, $jc) {
+  align-items: $ai;
+  justify-content: $jc;
+}

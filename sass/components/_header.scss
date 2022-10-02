@@ -7,7 +7,7 @@
 
 .header-container {
   display: flex;
-  align-items: center;
+  @include display-centered(center, null);
 }
 
 .main-nav__list {

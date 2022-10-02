@@ -6,7 +6,7 @@
 
 .footer__container {
   display: flex;
-  align-items: baseline;
+  @include display-centered(baseline, null);
 }
 
 .footer__socials-title {
@@ -29,7 +29,7 @@
 
 .subscribe {
   display: flex;
-  align-items: center;
+  @include display-centered(center, null);
 }
 
 .subscribe__input {
