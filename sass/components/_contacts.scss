@@ -1,20 +1,32 @@
 .contacts {
   display: none;
-  @media screen and(min-width: 768px) {
+  @media screen and(min-width: 767px) {
     display: flex;
     flex-direction: column;
     margin-left: auto;
+    gap: 10px;
   }
+
   @media screen and(min-width: 1200px) {
     display: flex;
     margin-left: auto;
   }
 }
+
 .contacts__item {
   display: none;
-  @media screen and(min-width: 768px) {
+  @media screen and(min-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
     margin-left: 50px;
   }
+
+  @media screen and(min-width: 1200px) {
+    display: flex;
+    margin-left: auto;
+  }
+
   .contacts__icon {
     @media screen and(min-width: 768px) {
       fill: currentColor;
@@ -23,7 +35,12 @@
   .contacts__link,
   .contacts__link {
     display: none;
-    @media screen and(min-width: 768px) {
+    @media screen and(min-width: 480px) {
+      display: flex;
+      @include display-centered(center, null);
+      gap: 10px;
+    }
+    @media screen and(min-width: 1200px) {
       display: flex;
       @include display-centered(center, null);
       gap: 10px;
