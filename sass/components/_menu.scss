@@ -1,7 +1,7 @@
 .menu-btn {
   position: absolute;
   top: 10px;
-  right: 10px;
+  right: 15px;
   display: flex;
   @include display-centered(center, center);
 
@@ -15,6 +15,10 @@
   border: none;
 
   cursor: pointer;
+
+  @media screen and(min-width: 480.5px) {
+    display: none;
+  }
 }
 
 .menu-container {
@@ -25,15 +29,15 @@
   width: 100%;
   height: 100%;
 
-  padding-top: 48px;
+  padding: 48px 40px;
 
   display: flex;
   flex-direction: column;
 
-  background-color: var(#ffffff);
+  background-color: var(--secondary-accent-clr);
   box-shadow: var(--menu-shdw);
 
-  z-index: 200;
+  z-index: 1000;
 
   transform: translateX(100%);
   transition: transform 400ms;
@@ -41,12 +45,16 @@
   &.is-open {
     transform: translateX(0);
   }
+
+  @media screen and(min-width: 480.5px) {
+    display: none;
+  }
 }
 
 .mobile-menu {
   margin-bottom: auto;
 }
-.mobile-socials {
+.mobile-menu__socials {
   @extend %list;
   display: flex;
   margin-top: 64px;
@@ -59,6 +67,11 @@
 
 .menu-toggle {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 10px;
+  right: 15px;
+
+  border: none;
+
+  background-color: transparent;
+  border: none;
 }

@@ -2,25 +2,35 @@
   display: none;
   @media screen and(min-width: 768px) {
     display: flex;
+    flex-direction: column;
+    margin-left: auto;
+  }
+  @media screen and(min-width: 1200px) {
+    display: flex;
     margin-left: auto;
   }
 }
 .contacts__item {
-  margin-left: 50px;
-}
-.contacts__icon {
-  fill: currentColor;
-}
-.contacts__link,
-.contacts__link {
-  display: flex;
-  @include display-centered(center, null);
-  @media screen and(min-width: 1200px) {
-    gap: 10px;
-    padding-top: 32px;
-    padding-bottom: 32px;
+  display: none;
+  @media screen and(min-width: 768px) {
+    margin-left: 50px;
   }
-
+  .contacts__icon {
+    @media screen and(min-width: 768px) {
+      fill: currentColor;
+    }
+  }
+  .contacts__link,
+  .contacts__link {
+    display: none;
+    @media screen and(min-width: 768px) {
+      display: flex;
+      @include display-centered(center, null);
+      gap: 10px;
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+  }
   @include font(var(--main-font), 14px, 500, 1.14, 0.02em, var(--secondary-clr));
   @include transition(color, null, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
   &:hover,
