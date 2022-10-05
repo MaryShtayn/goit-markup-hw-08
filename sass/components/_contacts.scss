@@ -37,35 +37,51 @@
 }
 
 .contacts__footer {
-  margin-bottom: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  @media screen and(min-width:1200px) {
-    margin-right: 70px;
+  @media screen and(min-width: 1200px) {
+    align-items: flex-start;
+    margin-right: 94px;
   }
 }
 
 .address {
+  display: block;
   font-style: normal;
   @include font(var(--main-font), 14px, 400, 1.7, 0.03em, var(--secondary-accent-clr));
-  &__list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+}
+.address__text {
+  display: block;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7142857143;
+  letter-spacing: 0.03em;
+  color: var(--secondary-accent-clr);
 
-  &__item:not(:last-child) {
+  @media screen and(min-width: 1200px) {
     margin-bottom: 9px;
   }
-  &__link {
-    @extend %link;
-    @include font(var(--main-font), 14px, 400, 1.7, 0.03em, var(--contacts-link-clr));
-    @include transition(color, null, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
+}
+.address__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and(min-width: 1200px) {
+    align-items: flex-start;
   }
-  &__link:hover,
-  &__link:focus {
-    color: var(--accent-clr);
-  }
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.address__link {
+  @extend %link;
+  @include font(var(--main-font), 14px, 400, 1.7, 0.03em, var(--contacts-link-clr));
+  @include transition(color, null, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
+}
+.address__link:hover,
+.address__link:focus {
+  color: var(--accent-clr);
 }

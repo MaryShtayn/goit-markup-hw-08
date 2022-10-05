@@ -473,6 +473,17 @@ summary {
   letter-spacing: 0.03em;
   color: var(--secondary-accent-clr);
 }
+@media screen and (min-width: 768px) {
+  .logo__footer {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo__footer {
+    display: block;
+  }
+}
 
 .contacts {
   display: none;
@@ -538,7 +549,6 @@ summary {
 }
 
 .contacts__footer {
-  margin-bottom: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -552,11 +562,15 @@ summary {
 }
 @media screen and (min-width: 1200px) {
   .contacts__footer {
-    margin-right: 70px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-right: 94px;
   }
 }
 
 .address {
+  display: block;
   font-style: normal;
   font-family: var(--main-font);
   font-size: 14px;
@@ -565,6 +579,21 @@ summary {
   letter-spacing: 0.03em;
   color: var(--secondary-accent-clr);
 }
+
+.address__text {
+  display: block;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7142857143;
+  letter-spacing: 0.03em;
+  color: var(--secondary-accent-clr);
+}
+@media screen and (min-width: 1200px) {
+  .address__text {
+    margin-bottom: 9px;
+  }
+}
+
 .address__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -577,9 +606,18 @@ summary {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (min-width: 1200px) {
+  .address__list {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
 .address__item:not(:last-child) {
   margin-bottom: 9px;
 }
+
 .address__link {
   font-family: var(--main-font);
   font-size: 14px;
@@ -594,7 +632,9 @@ summary {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.address__link:hover, .address__link:focus {
+
+.address__link:hover,
+.address__link:focus {
   color: var(--accent-clr);
 }
 
@@ -1060,7 +1100,17 @@ summary {
 }
 
 .footer__socials {
-  margin: 0;
+  margin-top: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer__socials {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__socials {
+    margin-top: 0;
+  }
 }
 .footer__socials > .socials.list {
   margin-bottom: 0;
@@ -1452,6 +1502,21 @@ summary {
             justify-content: center;
   }
 }
+@media screen and (max-width: 1200px) {
+  .footer__container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
 
 .footer__socials-title {
   display: -webkit-box;
@@ -1482,7 +1547,9 @@ summary {
 }
 @media screen and (min-width: 1200px) {
   .footer-form {
-    margin-left: auto;
+    margin-left: 93px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -1521,15 +1588,44 @@ summary {
           align-items: center;
   align-items: center;
 }
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
 
 .subscribe__lable {
   display: block;
   width: 100%;
   margin-bottom: 20px;
 }
-
+@media screen and (min-width: 1200px) {
+  .subscribe__lable {
+    margin-bottom: 0;
+    margin-right: 12px;
+    width: 358px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .subscribe__lable {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 450px;
+  }
+}
 .subscribe__input {
   padding: 15px;
+  margin: 0;
   width: 100%;
   height: 50px;
   cursor: pointer;
@@ -1552,12 +1648,6 @@ summary {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-@media screen and (min-width: 1200px) {
-  .subscribe__input {
-    margin-right: 12px;
-    width: 358px;
-  }
 }
 .subscribe__input:hover, .subscribe__input:focus {
   border-color: var(--accent-clr);
