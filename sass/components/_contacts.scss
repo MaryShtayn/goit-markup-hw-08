@@ -1,6 +1,6 @@
 .contacts {
   display: none;
-  @media screen and(min-width: 767px) {
+  @media screen and(min-width: 768px) {
     display: flex;
     flex-direction: column;
     margin-left: auto;
@@ -8,47 +8,26 @@
   }
 
   @media screen and(min-width: 1200px) {
-    display: inline-block;
+    flex-direction: row;
     margin-left: auto;
   }
 }
 
-.contacts__item {
-  display: none;
-  @media screen and(min-width: 767px) {
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    margin-left: 50px;
-    gap: 10px;
+.contacts__icon {
+  @media screen and(min-width: 768px) {
+    fill: currentColor;
   }
-
+}
+.contacts__link {
+  @extend %link;
   @media screen and(min-width: 1200px) {
-    display: inline-block;
-    margin-left: auto;
+    display: flex;
+    @include display-centered(center, null);
+    gap: 10px;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 
-  .contacts__icon {
-    @media screen and(min-width: 768px) {
-      fill: currentColor;
-    }
-  }
-  .contacts__link,
-  .contacts__link {
-    display: none;
-    @media screen and(min-width: 480px) {
-      display: flex;
-      @include display-centered(center, null);
-      gap: 10px;
-    }
-    @media screen and(min-width: 1200px) {
-      display: flex;
-      @include display-centered(center, null);
-      gap: 10px;
-      padding-top: 32px;
-      padding-bottom: 32px;
-    }
-  }
   @include font(var(--main-font), 14px, 500, 1.14, 0.02em, var(--secondary-clr));
   @include transition(color, null, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
   &:hover,

@@ -8,7 +8,6 @@
 }
 
 .header-container {
-  margin: 0;
   @media screen and (min-width: 768px) {
     display: flex;
     @include display-centered(center, null);
@@ -17,7 +16,6 @@
 
 .main-nav {
   @media screen and(min-width: 1200px) {
-    margin-left: 93px;
   }
 }
 
@@ -25,14 +23,11 @@
   display: none;
   @media screen and (min-width: 768px) {
     display: flex;
+    gap: 50px;
   }
 }
 
 .main-nav__item {
-  @media screen and(min-width: 1200px) {
-    margin-right: 50px;
-  }
-
   @include font(var(--main-font), 14px, 500, 1.14, 0.02em, var(--main-clr));
 
   &:last-child {
@@ -59,7 +54,7 @@
     &--current::after {
       content: '';
       position: absolute;
-      bottom: -1%;
+      bottom: 1.5%;
       left: 0;
       display: block;
       width: 100%;
