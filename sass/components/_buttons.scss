@@ -31,6 +31,7 @@
 
   @include font(var(--main-font), 16px, 700, calc(30 / 16), 0.06em, var(--secondary-accent-clr));
   @include transition(background-color, border-color, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
+
   &:hover,
   &:focus {
     background-color: var(--btn-accent-bg-cl);
