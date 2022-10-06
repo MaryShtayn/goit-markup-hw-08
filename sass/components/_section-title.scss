@@ -24,7 +24,7 @@
   margin-bottom: 30px;
   @include font(var(--main-font), 36px, 700, calc(42.19 / 36), 0.03em, var(--main-clr));
 
-  @media screen and(min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
   }
 }

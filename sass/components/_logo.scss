@@ -1,10 +1,10 @@
+// Logo HEADER
 .logo {
   display: inline-block;
   padding-top: 16px;
   padding-bottom: 16px;
 
   @media screen and (min-width: 768px) {
-    margin-right: 88px;
     padding-top: 26px;
     padding-bottom: 26px;
   }
@@ -22,6 +22,7 @@
   color: var(--accent-clr);
 }
 
+// Logo FOOTER
 .logo__footer {
   display: block;
   padding-top: 0;
@@ -36,11 +37,11 @@
     0.03em,
     var(--secondary-accent-clr)
   );
-  @media screen and(min-width: 768px) {
+  @media screen and (min-width: 768px) {
     align-items: center;
     margin-bottom: 20px;
   }
-  @media screen and(min-width: 1200px) {
-    display: block;
+  @media screen and (min-width: 1200px) {
+    margin-right: 0;
   }
 }
