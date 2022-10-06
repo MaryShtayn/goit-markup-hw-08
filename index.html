@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
+    <!-- Header -->
     <header class="header">
       <div class="header-container container">
         <a href="./index.html" lang="en" class="logo"
@@ -34,11 +35,11 @@
             <li class="main-nav__item"><a href="" class="main-nav__link link">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="contacts list">
-          <li class="contacts__item">
+        <ul class="header-contacts list">
+          <li class="header-contacts__item header-contacts__item">
             <a
               href="mailto:info@devstudio.com"
-              class="contacts__link link"
+              class="header-contacts__link link header-contacts__link--top"
               rel="noopener noreferrer"
               ><svg class="contacts__icon" width="16" height="12">
                 <use href="./images/icons.svg#envelope"></use>
@@ -46,8 +47,11 @@
               info@devstudio.com</a
             >
           </li>
-          <li class="contacts__item">
-            <a href="tel:+380961111111" class="contacts__link link" rel="noopener noreferrer"
+          <li class="header-contacts__item">
+            <a
+              href="tel:+380961111111"
+              class="header-contacts__link link header-contacts__link--bottom"
+              rel="noopener noreferrer"
               ><svg class="contacts__icon" width="10" height="16">
                 <use href="./images/icons.svg#smartphone"></use>
               </svg>
@@ -67,13 +71,15 @@
       </button>
     </header>
     <main>
-      <!-- <section class="hero hero__overlay">
+      <!-- Hero -->
+      <section class="hero hero__overlay">
         <div class="hero-container container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="hero__btn" data-modal-open>Замовити послугу</button>
         </div>
-      </section> -->
+      </section>
 
+      <!-- Features -->
       <section class="features">
         <div class="features-container container">
           <h2 class="features__title--hidden">Features</h2>
@@ -126,6 +132,7 @@
         </div>
       </section>
 
+      <!-- Services -->
       <section class="services">
         <div class="services-container container">
           <h2 class="services__title centered">Чим ми займаємося</h2>
@@ -170,6 +177,7 @@
         </div>
       </section>
 
+      <!-- Team -->
       <section class="team">
         <div class="team__container container">
           <h2 class="team__title centered">Наша команда</h2>
@@ -446,6 +454,7 @@
         </div>
       </section>
 
+      <!-- Clients -->
       <section class="clients">
         <div class="clients__container container">
           <h1 class="clients__title">Постійні клієнти</h1>
@@ -497,6 +506,7 @@
       </section>
     </main>
 
+    <!-- Footer -->
     <footer class="footer">
       <div class="footer__container container">
         <div class="footer__contacts">

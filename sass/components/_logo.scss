@@ -5,6 +5,7 @@
   padding-bottom: 16px;
 
   @media screen and (min-width: 768px) {
+    margin-right: 88px;
     padding-top: 26px;
     padding-bottom: 26px;
   }
@@ -37,9 +38,9 @@
     0.03em,
     var(--secondary-accent-clr)
   );
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     align-items: center;
-    margin-bottom: 20px;
+    margin-right: 0;
   }
   @media screen and (min-width: 1200px) {
     margin-right: 0;
