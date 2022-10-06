@@ -7,6 +7,7 @@ body {
 
 a {
   text-decoration: none;
+  color: currentColor;
 }
 
 ul {
@@ -82,6 +83,8 @@ img {
   /* Font */
   --main-font: Roboto;
   --secondary-font: Raleway;
+  --animation-time: 250ms;
+  --anomation-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
@@ -714,14 +717,41 @@ summary {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
-@media screen and (min-width: 480.5px) {
+@media screen and (min-width: 768px) {
   .menu-container {
     display: none;
   }
 }
 
-.mobile-menu {
+.mobile-menu__pages {
   margin-bottom: auto;
+  cursor: pointer;
+  font-family: var(--main-font);
+  font-size: 40px;
+  font-weight: 500;
+  line-height: calc 1.175;
+  letter-spacing: 0.02em;
+  color: var(--main-clr);
+}
+
+.mobile-menu__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-menu__item--blue {
+  color: var(--accent-clr);
+}
+
+.pages__link {
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: var(--animation-time);
+          transition-duration: var(--animation-time);
+  -webkit-transition-timing-function: var(--animation-function);
+          transition-timing-function: var(--animation-function);
+}
+.pages__link:hover, .pages__link:focus {
+  color: var(--accent-clr);
 }
 
 .mobile-menu__socials {
@@ -1396,6 +1426,8 @@ summary {
 }
 
 .portfolio {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--secondary-accent-clr);
 }
 
@@ -1601,12 +1633,7 @@ summary {
 }
 
 .footer__socials-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: block;
   margin-bottom: 20px;
   text-transform: uppercase;
   font-family: var(--main-font);
@@ -1616,12 +1643,6 @@ summary {
   letter-spacing: 0.03em;
   color: var(--secondary-accent-clr);
 }
-@media screen and (min-width: 1200px) {
-  .footer__socials-title {
-    display: block;
-  }
-}
-
 .footer-form {
   margin-top: 60px;
   margin-bottom: auto;
@@ -1649,12 +1670,6 @@ summary {
   letter-spacing: 0.03em;
   color: var(--secondary-accent-clr);
 }
-@media screen and (min-width: 1200px) {
-  .footer-form__title {
-    display: block;
-  }
-}
-
 .subscribe {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1681,18 +1696,9 @@ summary {
 
 .subscribe__lable {
   display: block;
+  width: 100%;
+  width: 450px;
   margin-bottom: 20px;
-}
-@media screen and (min-width: 768px) {
-  .subscribe__lable {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 450px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .subscribe__lable {

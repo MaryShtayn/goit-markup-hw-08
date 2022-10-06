@@ -28,4 +28,8 @@
   /* Font */
   --main-font: Roboto;
   --secondary-font: Raleway;
+
+  // Transitions
+  --animation-time: 250ms;
+  --anomation-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

@@ -59,16 +59,15 @@
             >
           </li>
         </ul>
+        <button
+          type="button"
+          class="menu-btn js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40"><use href="./images/icons.svg#menu-open"></use></svg>
+        </button>
       </div>
-
-      <button
-        type="button"
-        class="menu-btn js-open-menu"
-        aria-expanded="false"
-        aria-controls="mobile-menu"
-      >
-        <svg width="40" height="40"><use href="./images/icons.svg#menu-open"></use></svg>
-      </button>
     </header>
     <main>
       <!-- Hero -->
@@ -699,10 +698,12 @@
         </svg>
       </button>
 
-      <ul class="mobile-menu">
-        <li><a href="" class="link">Студія</a></li>
-        <li><a href="" class="link">Портфоліо</a></li>
-        <li><a href="" class="link">Контакти</a></li>
+      <ul class="mobile-menu__pages">
+        <li class="mobile-menu__item mobile-menu__item--blue">
+          <a href="" class="mobile-menu__link">Студія</a>
+        </li>
+        <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Портфоліо</a></li>
+        <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Контакти</a></li>
       </ul>
       <ul class="mobile-menu__contacts">
         <li><a href="" class="link">+38 096 111 11 11</a></li>
