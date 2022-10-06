@@ -47,6 +47,7 @@
   margin-top: 60px;
   margin-bottom: auto;
   width: 100%;
+
   @media screen and(min-width:1200px) {
     margin-left: 93px;
     margin-top: 0;
@@ -55,14 +56,15 @@
 }
 
 .footer-form__title {
-  @media screen and(min-width: 1200px) {
-    display: block;
-  }
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
   text-transform: uppercase;
   @include font(var(--main-font), 14px, 700, calc(16 / 14), 0.03em, var(--secondary-accent-clr));
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
 
 .subscribe {
