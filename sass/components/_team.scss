@@ -6,16 +6,13 @@
   }
 }
 
-.team__container {
-  max-height: 2761px;
-}
-
 .team__list {
+  display: flex;
+  justify-content: center;
   width: 100%;
   @include list(flex, 30px, column, null);
-  @include display-centered(null, center);
 
-  @media screen and(min-width: 768px) {
+  @media screen and (min-width: 768px) {
     @include list(flex, 30px, row, wrap);
   }
 }
@@ -33,12 +30,12 @@
   &:last-child {
     margin-right: 0;
   }
-  @media screen and(min-width: 768px) {
+  @media screen and (min-width: 768px) {
     max-width: 354px;
     // height: 536px;
   }
 
-  @media screen and(min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     max-width: 270px;
   }
 }

@@ -1,13 +1,14 @@
 .services {
   @include section(0px, 94px, null);
 
-  @media screen and (max-width: 1199.5px) {
+  @media screen and (max-width: 1199.98px) {
     display: none;
   }
 }
 
 .services__list {
-  @include display-centered(null, center);
+  display: flex;
+  justify-content: center;
 
   @include list(flex, 30px, row, null);
 }
@@ -27,8 +28,8 @@
   bottom: 0;
   left: 0;
   display: flex;
-
-  @include display-centered(center, center);
+  align-items: center;
+  justify-content: center;
 
   @include font(var(--main-font), 14px, 700, calc(16 / 14), 0.03em, var(--secondary-accent-clr));
   text-transform: uppercase;

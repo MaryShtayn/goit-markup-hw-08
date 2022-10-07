@@ -1,6 +1,6 @@
 .socials {
   @include list(flex, 10px, row, null);
-  @include display-centered(null, center);
+  justify-content: center;
 }
 
 .socials__item {
@@ -8,13 +8,20 @@
 }
 .socials__link {
   display: flex;
-  @include display-centered(center, center);
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
   background-color: var(--secondary-accent-clr);
   color: var(--icons-clr);
-  @include transition(background-color, color, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
+  @include transition(
+    background-color,
+    color,
+    null,
+    var(--animation-time),
+    var(--animation-function)
+  );
 
   &:hover,
   &:focus {
@@ -43,7 +50,13 @@
   & .socials__link--dark {
     background-color: var(--icons-footer-bgd-clr);
     color: var(--main-bgd-clr);
-    @include transition(background-color, null, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
+    @include transition(
+      background-color,
+      null,
+      null,
+      var(--animation-time),
+      var(--animation-function)
+    );
   }
   & .socials__icon {
     fill: currentColor;

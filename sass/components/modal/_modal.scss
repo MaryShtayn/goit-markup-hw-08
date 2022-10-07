@@ -7,7 +7,7 @@
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.2);
 
-  @include transition(opacity, visibility, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
+  @include transition(opacity, visibility, null, var(--animation-time), var(--animation-function));
 }
 
 .backdrop.is-hidden {
@@ -28,7 +28,7 @@
   border-radius: 4px;
   box-shadow: var(--team-card-and-modal);
 
-  @include transition(transform, null, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
+  @include transition(transform, null, null, var(--animation-time), var(--animation-function));
 }
 
 .modal__close-btn {
@@ -36,14 +36,15 @@
   top: 8px;
   right: 8px;
   display: flex;
-  @include display-centered(center, center);
+  align-items: center;
+  justify-content: center;
   width: 30px;
   height: 30px;
   border: 1px solid var(--modal-close-btn-border);
   background-color: var(--secondary-accent-clr);
   border-radius: 50%;
   cursor: pointer;
-  @include transition(fill, null, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
+  @include transition(fill, null, null, var(--animation-time), var(--animation-function));
 
   &:hover,
   &:focus {

@@ -6,7 +6,7 @@
   margin-bottom: 30px;
   padding: 0;
   text-align: center;
-  max-width: 360px;
+
   text-transform: uppercase;
   @include font(var(--main-font), 26px, 900, calc(42 / 26), 0.06em, var(--secondary-accent-clr));
 

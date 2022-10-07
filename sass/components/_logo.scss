@@ -25,7 +25,6 @@
 
 // Logo FOOTER
 .logo__footer {
-  display: block;
   padding-top: 0;
   padding-bottom: 0;
   margin-bottom: 20px;
@@ -38,11 +37,7 @@
     0.03em,
     var(--secondary-accent-clr)
   );
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    align-items: center;
-    margin-right: 0;
-  }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     margin-right: 0;
   }
 }

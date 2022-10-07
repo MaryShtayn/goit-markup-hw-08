@@ -14,6 +14,7 @@
     margin-left: auto;
     gap: 30px;
   }
+  
 }
 
 .header-contacts__link {
@@ -40,14 +41,14 @@
 
   @media screen and (min-width: 1200px) {
     display: flex;
-    @include display-centered(center, null);
+    align-items: center;
     gap: 10px;
     padding-top: 32px;
     padding-bottom: 32px;
   }
 
   @include font(var(--main-font), 14px, 500, 1.14, 0.02em, var(--secondary-clr));
-  @include transition(color, null, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
+  @include transition(color, null, null, var(--animation-time), var(--animation-function));
   &:hover,
   &:focus {
     color: var(--accent-clr);
@@ -102,7 +103,7 @@
 .address__link {
   @extend %link;
   @include font(var(--main-font), 14px, 400, 1.7, 0.03em, var(--contacts-link-clr));
-  @include transition(color, null, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
+  @include transition(color, null, null, var(--animation-time), var(--animation-function));
 }
 .address__link:hover,
 .address__link:focus {

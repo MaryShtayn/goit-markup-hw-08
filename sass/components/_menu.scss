@@ -1,9 +1,10 @@
 .menu-btn {
-  position: absolute;
+  // position: absolute;
   top: 10px;
   right: 15px;
   display: flex;
-  @include display-centered(center, center);
+  align-items: center;
+  justify-content: center;
 
   margin-left: auto;
   padding: 0;
@@ -53,7 +54,7 @@
 .mobile-menu__pages {
   margin-bottom: auto;
   cursor: pointer;
-  @include font(var(--main-font), 40px, 500, calc (47 / 40), 0.02em, var(--main-clr));
+  @include font(var(--main-font), 40px, 500, calc(47 / 40), 0.02em, var(--main-clr));
 }
 
 .mobile-menu__item:not(:last-child) {

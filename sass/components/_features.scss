@@ -27,7 +27,8 @@
 
 .icon-wrap {
   display: flex;
-  @include display-centered(center, center);
+  align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
   height: 120px;
   border-radius: 4px;
@@ -35,13 +36,12 @@
   background-color: var(--accent-bgd-clr);
 }
 .features__subtitle {
+  @media screen and (max-width: 767.98px) {
+    text-align: center;
+  }
   @include font(var(--main-font), 14px, 700, calc(16.41 / 14), 0.03em, var(--main-clr));
   text-transform: uppercase;
   margin-bottom: 10px;
-
-  @media screen and(max-width: 767.5px) {
-    text-align: center;
-  }
 }
 .features__text {
   @include font(var(--main-font), 14px, 400, calc(24 / 14), 0.03em, var(--secondary-clr));
