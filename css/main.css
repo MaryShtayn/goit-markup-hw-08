@@ -715,7 +715,7 @@ summary {
   }
 }
 
-.mobile-menu__pages {
+.mobile-menu__nav {
   margin-bottom: auto;
   cursor: pointer;
   font-family: var(--main-font);
@@ -734,7 +734,7 @@ summary {
   color: var(--accent-clr);
 }
 
-.pages__link {
+.mobile-menu__link {
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: var(--animation-time);
@@ -742,7 +742,7 @@ summary {
   -webkit-transition-timing-function: var(--animation-function);
           transition-timing-function: var(--animation-function);
 }
-.pages__link:hover, .pages__link:focus {
+.mobile-menu__link:hover, .mobile-menu__link:focus {
   color: var(--accent-clr);
 }
 
@@ -820,6 +820,8 @@ summary {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
   gap: 10px;
   width: 216px;
   height: 50px;
@@ -907,45 +909,67 @@ summary {
 
 .services__title {
   text-align: center;
-  margin-bottom: 50px;
   font-family: var(--main-font);
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
-  line-height: 1.1719444444;
+  line-height: 1.1717857143;
   letter-spacing: 0.03em;
   color: var(--main-clr);
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .services__title {
+    margin-bottom: 50px;
+    font-family: var(--main-font);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.1719444444;
+    letter-spacing: 0.03em;
+    color: var(--main-clr);
+  }
 }
 
 .team__title {
   text-align: center;
   margin-bottom: 30px;
   font-family: var(--main-font);
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
-  line-height: 1.1719444444;
+  line-height: 1.1717857143;
   letter-spacing: 0.03em;
   color: var(--main-clr);
 }
 @media screen and (min-width: 1200px) {
   .team__title {
     margin-bottom: 50px;
+    font-family: var(--main-font);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.1719444444;
+    letter-spacing: 0.03em;
+    color: var(--main-clr);
   }
 }
 
 .clients__title {
   text-align: center;
   margin-bottom: 30px;
-  text-align: center;
   font-family: var(--main-font);
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
-  line-height: 1.1719444444;
+  line-height: 1.1717857143;
   letter-spacing: 0.03em;
   color: var(--main-clr);
 }
 @media screen and (min-width: 1200px) {
   .clients__title {
     margin-bottom: 50px;
+    font-family: var(--main-font);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.1719444444;
+    letter-spacing: 0.03em;
+    color: var(--main-clr);
   }
 }
 
@@ -1118,11 +1142,7 @@ summary {
   position: relative;
 }
 
-.overlay-box {
-  position: relative;
-}
-
-.overlay__title {
+.services__subtitle {
   position: absolute;
   width: 100%;
   height: 70px;
@@ -1198,6 +1218,16 @@ summary {
 }
 
 .footer__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 60px;
 }
 @media screen and (min-width: 768px) {
@@ -1207,7 +1237,9 @@ summary {
 }
 @media screen and (min-width: 1200px) {
   .footer__socials {
-    margin-top: 0;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     margin-right: 93px;
   }
 }
@@ -1680,14 +1712,20 @@ summary {
   letter-spacing: 0.03em;
   color: var(--secondary-accent-clr);
 }
+
 .footer-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 60px;
   margin-bottom: auto;
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer-form {
-    margin-top: 60px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .footer-form {
@@ -1698,6 +1736,8 @@ summary {
 }
 
 .footer-form__title {
+  display: block;
+  margin: auto;
   margin-bottom: 20px;
   text-transform: uppercase;
   font-family: var(--main-font);
@@ -1707,6 +1747,14 @@ summary {
   letter-spacing: 0.03em;
   color: var(--secondary-accent-clr);
 }
+@media screen and (min-width: 1200px) {
+  .footer-form__title {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: auto;
+  }
+}
+
 .subscribe {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1732,8 +1780,6 @@ summary {
 }
 
 .subscribe__lable {
-  display: block;
-  width: 100%;
   width: 450px;
   margin-bottom: 20px;
 }

@@ -51,7 +51,7 @@
   }
 }
 
-.mobile-menu__pages {
+.mobile-menu__nav {
   margin-bottom: auto;
   cursor: pointer;
   @include font(var(--main-font), 40px, 500, calc(47 / 40), 0.02em, var(--main-clr));
@@ -63,7 +63,7 @@
 .mobile-menu__item--blue {
   color: var(--accent-clr);
 }
-.pages__link {
+.mobile-menu__link {
   @include transition(color, null, null, var(--animation-time), var(--animation-function));
   &:hover,
   &:focus {

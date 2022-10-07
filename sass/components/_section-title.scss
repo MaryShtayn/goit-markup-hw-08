@@ -10,9 +10,6 @@
   text-transform: uppercase;
   @include font(var(--main-font), 26px, 900, calc(42 / 26), 0.06em, var(--secondary-accent-clr));
 
-  @media screen and (min-width: 768px) {
-  }
-
   @media screen and (min-width: 1200px) {
     max-width: 696px;
     @include font(var(--main-font), 44px, 900, calc(60 / 44), 0.06em, var(--secondary-accent-clr));
@@ -25,29 +22,35 @@
 
 .services__title {
   text-align: center;
-  margin-bottom: 50px;
-  @include font(var(--main-font), 36px, 700, calc(42.19 / 36), 0.03em, var(--main-clr));
+  @include font(var(--main-font), 28px, 700, calc(32.81 / 28), 0.03em, var(--main-clr));
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    @include font(var(--main-font), 36px, 700, calc(42.19 / 36), 0.03em, var(--main-clr));
+  }
 }
 
 .team__title {
   text-align: center;
   margin-bottom: 30px;
-  @include font(var(--main-font), 36px, 700, calc(42.19 / 36), 0.03em, var(--main-clr));
+  @include font(var(--main-font), 28px, 700, calc(32.81 / 28), 0.03em, var(--main-clr));
 
   @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
+    @include font(var(--main-font), 36px, 700, calc(42.19 / 36), 0.03em, var(--main-clr));
   }
 }
 
 .clients__title {
   text-align: center;
   margin-bottom: 30px;
+  @include font(var(--main-font), 28px, 700, calc(32.81 / 28), 0.03em, var(--main-clr));
 
   @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
+    @include font(var(--main-font), 36px, 700, calc(42.19 / 36), 0.03em, var(--main-clr));
   }
-  text-align: center;
-  @include font(var(--main-font), 36px, 700, calc(42.19 / 36), 0.03em, var(--main-clr));
 }
 
 .portfolio__title {

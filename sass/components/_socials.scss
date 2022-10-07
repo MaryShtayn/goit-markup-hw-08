@@ -35,12 +35,16 @@
 }
 
 .footer__socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 60px;
+
   @media screen and (min-width: 768px) {
     margin-top: 0;
   }
   @media screen and (min-width: 1200px) {
-    margin-top: 0;
+    align-items: flex-start;
     margin-right: 93px;
   }
 

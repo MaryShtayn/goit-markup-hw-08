@@ -33,25 +33,18 @@
 
 .footer__socials-title {
   display: block;
-  // display: flex;
-  // justify-content: center;
   margin-bottom: 20px;
   text-transform: uppercase;
   @include font(var(--main-font), 14px, 700, calc(16 / 14), 0.03em, var(--secondary-accent-clr));
-
-  @media screen and (min-width: 1200px) {
-    // display: block;
-  }
 }
 
 .footer-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 60px;
   margin-bottom: auto;
-  // width: 100%;
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-top: 60px;
-  }
   @media screen and (min-width: 1200px) {
     margin-left: auto;
     margin-top: 0;
@@ -60,11 +53,17 @@
 }
 
 .footer-form__title {
+  // кнопка STRONG - поэтому блочный
+  display: block;
+  margin: auto;
   margin-bottom: 20px;
   text-transform: uppercase;
   @include font(var(--main-font), 14px, 700, calc(16 / 14), 0.03em, var(--secondary-accent-clr));
 
   @media screen and (min-width: 1200px) {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: auto;
   }
 }
 
@@ -79,13 +78,9 @@
   }
 }
 .subscribe__lable {
-  display: block;
-  width: 100%;
   width: 450px;
   margin-bottom: 20px;
 
-  @media screen and (min-width: 768px) {
-  }
   @media screen and (min-width: 1200px) {
     margin-bottom: 0;
     margin-right: 12px;

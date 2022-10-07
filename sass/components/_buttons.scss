@@ -15,7 +15,13 @@
   text-align: center;
 
   @include font(var(--main-font), 16px, 700, calc(30 / 16), 0.06em, var(--secondary-accent-clr));
-  @include transition(background-color, null, null, var(--animation-time), var(--animation-function));
+  @include transition(
+    background-color,
+    null,
+    null,
+    var(--animation-time),
+    var(--animation-function)
+  );
 
   @media screen and (min-width: 1200px) {
     width: 216px;
@@ -30,6 +36,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
   gap: 10px;
   width: 216px;
   height: 50px;
@@ -40,7 +48,13 @@
   cursor: pointer;
 
   @include font(var(--main-font), 16px, 700, calc(30 / 16), 0.06em, var(--secondary-accent-clr));
-  @include transition(background-color, border-color, null, var(--animation-time), var(--animation-function));
+  @include transition(
+    background-color,
+    border-color,
+    null,
+    var(--animation-time),
+    var(--animation-function)
+  );
 
   &:hover,
   &:focus {
@@ -57,7 +71,13 @@
   border-radius: 4px;
 
   @include font(inherit, 16px, 500, calc(26 / 16), 0.03em, var(--main-clr));
-  @include transition(color, background-color, box-shadow, var(--animation-time), var(--animation-function));
+  @include transition(
+    color,
+    background-color,
+    box-shadow,
+    var(--animation-time),
+    var(--animation-function)
+  );
   &:hover,
   &:focus {
     cursor: pointer;
