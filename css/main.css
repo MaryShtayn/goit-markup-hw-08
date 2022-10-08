@@ -457,6 +457,7 @@ summary {
 .logo--lower {
   display: block;
   margin: auto;
+  text-align: center;
   margin-bottom: 20px;
   padding-top: 0;
   padding-bottom: 0;
@@ -464,6 +465,11 @@ summary {
 @media screen and (min-width: 768px) {
   .logo--lower {
     margin-right: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo--lower {
+    text-align: start;
   }
 }
 
@@ -823,9 +829,7 @@ summary {
 }
 
 .hero__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -867,9 +871,7 @@ summary {
 }
 
 .subscribe__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1811,7 +1813,7 @@ summary {
 
 .footer-form__title {
   display: block;
-  margin: auto;
+  text-align: center;
   margin-top: 60px;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -1827,6 +1829,7 @@ summary {
     margin-top: 0;
     margin-left: 0;
     margin-right: auto;
+    text-align: start;
   }
 }
 
