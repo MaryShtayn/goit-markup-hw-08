@@ -1,6 +1,6 @@
 // Logo HEADER
-.logo {
-  display: inline-block;
+.logo--upper {
+  display: block;
   padding-top: 16px;
   padding-bottom: 16px;
 
@@ -9,25 +9,35 @@
     padding-top: 26px;
     padding-bottom: 26px;
   }
-
   @media screen and (min-width: 1200px) {
     margin-right: 93px;
     padding-top: 24px;
     padding-bottom: 24px;
   }
-
-  text-decoration: none;
-  @include font(var(--secondary-font), 26px, 700, calc(31 / 26), 0.03em, var(--main-clr));
-}
-.logo__web--blue {
-  color: var(--accent-clr);
 }
 
 // Logo FOOTER
-.logo__footer {
+.logo--lower {
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
   padding-top: 0;
   padding-bottom: 0;
-  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 0;
+  }
+}
+.logo__web--blue {
+  text-decoration: none;
+  @include font(var(--secondary-font), 26px, 700, calc(31 / 26), 0.03em, var(--accent-clr));
+}
+
+.logo__studio--dark {
+  color: var(--main-clr);
+}
+
+.logo__studio--light {
   text-decoration: none;
   @include font(
     var(--secondary-font),
@@ -37,7 +47,4 @@
     0.03em,
     var(--secondary-accent-clr)
   );
-  @media screen and (min-width: 768px) {
-    margin-right: 0;
-  }
 }

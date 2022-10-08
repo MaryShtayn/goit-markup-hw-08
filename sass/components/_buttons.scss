@@ -46,8 +46,8 @@
   border: none;
   border-radius: 4px;
   cursor: pointer;
-
   @include font(var(--main-font), 16px, 700, calc(30 / 16), 0.06em, var(--secondary-accent-clr));
+
   @include transition(
     background-color,
     border-color,
@@ -61,7 +61,12 @@
     background-color: var(--btn-accent-bg-cl);
     border-color: var(--btn-accent-bg-cl);
   }
+
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+  }
 }
+
 .filtr__btn {
   padding: 6px 25px;
   min-width: 73px;

@@ -8,12 +8,11 @@
   display: flex;
   align-items: baseline;
   justify-content: center;
-  
 }
 .checkbox__icon {
   display: flex;
   align-items: center;
-    margin-right: 8.38px;
+  margin-right: 8.38px;
   width: 16px;
   height: 15px;
   background-size: contain;
@@ -23,7 +22,13 @@
 .checkbox__input {
   @extend %visually-hidden;
 
-  @include transition(background-color, border-color, null, var(--animation-time), var(--animation-function));
+  @include transition(
+    background-color,
+    border-color,
+    null,
+    var(--animation-time),
+    var(--animation-function)
+  );
 
   &:checked + .checkbox__icon {
     background-color: var(--accent-clr);
@@ -37,10 +42,22 @@
 
 .checkbox__text {
   margin-right: 4px;
-  @include font(var(--main-font), 14px, 400, calc(24 / 14), 0.03em, var(--secondary-clr));
+  @include font(var(--main-font), 12px, 400, calc(14 / 12), 0.03em, var(--secondary-clr));
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+  }
 }
 
 .checkbox__link {
+  @include font(var(--main-font), 12px, 400, calc(14 / 12), 0.03em, var(--secondary-clr));
+
   color: var(--accent-clr);
   text-decoration: underline;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+  }
 }
