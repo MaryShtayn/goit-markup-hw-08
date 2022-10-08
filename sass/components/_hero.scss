@@ -8,7 +8,7 @@
 
 .hero__overlay {
   max-width: 1600px;
-  height: 400px;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
   background-size: cover;
@@ -42,6 +42,6 @@
         url('../../images/hero/img_lg-@2x.jpg'), url('../../images/hero/img-bg2_lg-@2x.png');
     }
 
-    height: 600px;
+    // height: 600px;
   }
 }

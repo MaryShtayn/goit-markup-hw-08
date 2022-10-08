@@ -1,10 +1,10 @@
 .hero__btn {
-  display: block;
+  display: flex;
   align-items: center;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  width: 200px;
+  min-width: 200px;
   height: 50px;
   background-color: var(--accent-clr);
   cursor: pointer;
