@@ -1,5 +1,5 @@
 .footer {
-  height: 603px;
+  height: auto;
   background-color: var(--secondary-bgd-clr);
   padding-top: 60px;
   padding-bottom: 60px;
@@ -67,6 +67,7 @@
 .subscribe {
   display: flex;
   flex-direction: column;
+
   @media screen and (min-width: 1200px) {
     flex-direction: row;
   }
@@ -75,6 +76,9 @@
 .subscribe__lable {
   display: block;
   margin-bottom: 20px;
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
 
   @media screen and (min-width: 768px) {
     width: 450px;
