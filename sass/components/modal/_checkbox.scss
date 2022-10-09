@@ -6,11 +6,12 @@
 
 .checkbox__lable {
   display: flex;
-  align-items: baseline;
-  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
 }
+
 .checkbox__icon {
-  display: flex;
+  display: inline-block;
   align-items: center;
   margin-right: 8.38px;
   width: 16px;
@@ -51,6 +52,7 @@
 }
 
 .checkbox__link {
+  display: inline-block;
   @include font(var(--main-font), 12px, 400, calc(14 / 12), 0.03em, var(--secondary-clr));
 
   color: var(--accent-clr);

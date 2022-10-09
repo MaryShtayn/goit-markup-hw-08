@@ -6,10 +6,12 @@
   margin-bottom: 30px;
   padding: 0;
   text-align: center;
-
   text-transform: uppercase;
   @include font(var(--main-font), 26px, 900, calc(42 / 26), 0.06em, var(--secondary-accent-clr));
 
+  @media screen and (min-width: 768px) {
+    max-width: 360px;
+  }
   @media screen and (min-width: 1200px) {
     max-width: 696px;
     @include font(var(--main-font), 44px, 900, calc(60 / 44), 0.06em, var(--secondary-accent-clr));

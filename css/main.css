@@ -789,6 +789,8 @@ summary {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 64px;
 }
 
@@ -962,6 +964,11 @@ summary {
   line-height: 1.6153846154;
   letter-spacing: 0.06em;
   color: var(--secondary-accent-clr);
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    max-width: 360px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
@@ -1322,7 +1329,7 @@ summary {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    margin-right: 93px;
+    margin-right: auto;
   }
 }
 .footer__socials > .socials.list {
@@ -1537,6 +1544,12 @@ summary {
   padding-bottom: 60px;
   background-color: var(--secondary-accent-clr);
 }
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .filtr {
   display: -webkit-box;
@@ -1599,18 +1612,19 @@ summary {
       -ms-flex-positive: 1;
           flex-grow: 1;
   width: 100%;
-  height: 440px;
   margin-bottom: 30px;
   padding: 0;
 }
 @media screen and (min-width: 768px) {
   .cards__item {
-    width: 354px;
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1199px) {
   .cards__item {
-    width: 370px;
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
   }
 }
 
@@ -1806,6 +1820,7 @@ summary {
 }
 
 .footer-form {
+  margin-top: 60px;
   margin-bottom: auto;
 }
 @media screen and (min-width: 1200px) {
@@ -1818,7 +1833,6 @@ summary {
 .footer-form__title {
   display: block;
   text-align: center;
-  margin-top: 60px;
   margin-bottom: 20px;
   text-transform: uppercase;
   font-family: var(--main-font);
@@ -1858,11 +1872,6 @@ summary {
 .subscribe__lable {
   display: block;
   margin-bottom: 20px;
-}
-@media screen and (max-width: 480px) {
-  .subscribe__lable {
-    width: 100%;
-  }
 }
 @media screen and (min-width: 768px) {
   .subscribe__lable {
@@ -1936,7 +1945,7 @@ summary {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 450px;
+  width: 96%;
   height: 609px;
   padding: 40px;
   background-color: var(--secondary-accent-clr);
@@ -2179,18 +2188,16 @@ summary {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .checkbox__icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2236,6 +2243,7 @@ summary {
 }
 
 .checkbox__link {
+  display: inline-block;
   font-family: var(--main-font);
   font-size: 12px;
   font-weight: 400;

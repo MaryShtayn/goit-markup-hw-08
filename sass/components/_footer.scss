@@ -39,6 +39,7 @@
 }
 
 .footer-form {
+  margin-top: 60px;
   margin-bottom: auto;
 
   @media screen and (min-width: 1200px) {
@@ -51,7 +52,6 @@
   // кнопка STRONG - поэтому блочный
   display: block;
   text-align: center;
-  margin-top: 60px;
   margin-bottom: 20px;
   text-transform: uppercase;
   @include font(var(--main-font), 14px, 700, calc(16 / 14), 0.03em, var(--secondary-accent-clr));
@@ -76,9 +76,6 @@
 .subscribe__lable {
   display: block;
   margin-bottom: 20px;
-  @media screen and (max-width: 480px) {
-    width: 100%;
-  }
 
   @media screen and (min-width: 768px) {
     width: 450px;
