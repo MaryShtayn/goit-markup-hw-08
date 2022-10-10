@@ -433,6 +433,14 @@ summary {
     background-color: var(--accent-clr);
   }
 }
+@media screen and (min-width: 1200px) {
+  .main-nav__link--current::after {
+    content: "";
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+  }
+}
 
 .logo--upper {
   display: block;
