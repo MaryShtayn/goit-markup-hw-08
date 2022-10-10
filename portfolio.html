@@ -89,20 +89,36 @@
             <li class="cards__item">
               <a href="#" class="cards__link link">
                 <div class="portfolio-thumb">
-                  <img
-                    srcset="
-                      ./images/portfolio/mobile/img_sm-@1x.jpg  450w,
-                      ./images/portfolio/mobile/img_sm-@2x.jpg  900w,
-                      ./images/portfolio/tablet/img_md-@1x.jpg  354w,
-                      ./images/portfolio/tablet/img_md-@2x.jpg  708w,
-                      ./images/portfolio/desktop/img_lg-@1x.jpg 370w,
-                      ./images/portfolio/desktop/img_lg-@2x.jpg 740w
-                    "
-                    src="./images/portfolio/mobile/img_sm-@1x.jpg"
-                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 450px) 450px, 100vw"
-                    alt="Ноутбук із лендінгом на екрані"
-                    class="portfolio-thumb__img"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/desktop/img_lg-@1x.jpg 370w,
+                        ./images/portfolio/desktop/img_lg-@2x.jpg 740w
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/tablet/img_md-@1x.jpg 354w,
+                        ./images/portfolio/tablet/img_md-@2x.jpg 708w
+                      "
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/mobile/img_sm-@1x.jpg 450w,
+                        ./images/portfolio/mobile/img_sm-@2x.jpg 900w
+                      "
+                    />
+                    <img
+                      src="./images/portfolio/mobile/img_sm-@1x.jpg"
+                      sizes="(min-width: 1200px)
+                    370px, (min-width: 768px) 354px, (min-width: 450px) 450px, 100vw"
+                      alt="Ноутбук із лендінгом на екрані"
+                      class="card-img"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -121,20 +137,36 @@
             <li class="cards__item">
               <a href="#" class="cards__link link">
                 <div class="portfolio-thumb">
-                  <img
-                    srcset="
-                      ./images/portfolio/mobile/img_sm-@1x-1.jpg  450w,
-                      ./images/portfolio/mobile/img_sm-@2x-1.jpg  900w,
-                      ./images/portfolio/tablet/img_md-@1x-1.jpg  354w,
-                      ./images/portfolio/tablet/img_md-@2x-1.jpg  708w,
-                      ./images/portfolio/desktop/img_lg-@1x-1.jpg 370w,
-                      ./images/portfolio/desktop/img_lg-@2x-1.jpg 740w
-                    "
-                    src="./images/portfolio/mobile/img_sm-@1x-1.jpg"
-                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 450px) 450px, 100vw"
-                    alt="Два гравця у баскетбол із різних команд борються за м'яч"
-                    class="portfolio-thumb__img"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/desktop/img_lg-@1x-1.jpg 370w,
+                        ./images/portfolio/desktop/img_lg-@2x-1.jpg 740w
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/tablet/img_md-@1x-1.jpg 354w,
+                        ./images/portfolio/tablet/img_md-@2x-1.jpg 708w
+                      "
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/mobile/img_sm-@1x-1.jpg 450w,
+                        ./images/portfolio/mobile/img_sm-@2x-1.jpg 900w
+                      "
+                    />
+                    <img
+                      src="./images/portfolio/mobile/img_sm-@1x-1.jpg"
+                      sizes="(min-width: 1200px)
+                    370px, (min-width: 768px) 354px, (min-width: 450px) 450px, 100vw"
+                      alt="Два гравця у баскетбол із різних команд борються за м'яч"
+                      class="card-img"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -155,20 +187,36 @@
             <li class="cards__item">
               <a href="#" class="cards__link link">
                 <div class="portfolio-thumb">
-                  <img
-                    srcset="
-                      ./images/portfolio/mobile/img_sm-@1x-2.jpg  450w,
-                      ./images/portfolio/mobile/img_sm-@2x-2.jpg  900w,
-                      ./images/portfolio/tablet/img_md-@1x-2.jpg  354w,
-                      ./images/portfolio/tablet/img_md-@2x-2.jpg  708w,
-                      ./images/portfolio/desktop/img_lg-@1x-2.jpg 370w,
-                      ./images/portfolio/desktop/img_lg-@2x-2.jpg 740w
-                    "
-                    src="./images/portfolio/mobile/img_sm-@1x-2.jpg"
-                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 450px) 450px, 100vw"
-                    alt="Логотип ресторану із назвою Сіфуд та рибкою на фоні"
-                    class="portfolio-thumb__img"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/desktop/img_lg-@1x-2.jpg 370w,
+                        ./images/portfolio/desktop/img_lg-@2x-2.jpg 740w
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/tablet/img_md-@1x-2.jpg 354w,
+                        ./images/portfolio/tablet/img_md-@2x-2.jpg 708w
+                      "
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/mobile/img_sm-@1x-2.jpg 450w,
+                        ./images/portfolio/mobile/img_sm-@2x-2.jpg 900w
+                      "
+                    />
+                    <img
+                      src="./images/portfolio/mobile/img_sm-@1x-2.jpg"
+                      sizes="(min-width: 1200px)
+                    370px, (min-width: 768px) 354px, (min-width: 450px) 450px, 100vw"
+                      alt="Логотип ресторану із назвою Сіфуд та рибкою на фоні"
+                      class="card-img"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -187,22 +235,36 @@
             <li class="cards__item">
               <a href="#" class="cards__link link">
                 <div class="portfolio-thumb">
-                  <img
-                    srcset="
-                      ./images/portfolio/mobile/img_sm-@1x-3.jpg  450w,
-                      ./images/portfolio/mobile/img_sm-@2x-3.jpg  900w,
-                      ./images/portfolio/tablet/img_md-@1x-3.jpg  354w,
-                      ./images/portfolio/tablet/img_md-@2x-3.jpg  708w,
-                      ./images/portfolio/desktop/img_lg-@1x-3.jpg 370w,
-                      ./images/portfolio/desktop/img_lg-@2x-3.jpg 740w
-                    "
-                    src="./images/portfolio/mobile/img_sm-@1x-3.jpg"
-                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 450px) 450px, 100vw"
-                    alt="Навушники"
-                    class="card-img"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/desktop/img_lg-@1x-3.jpg 370w,
+                        ./images/portfolio/desktop/img_lg-@2x-3.jpg 740w
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/tablet/img_md-@1x-3.jpg 354w,
+                        ./images/portfolio/tablet/img_md-@2x-3.jpg 708w
+                      "
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/mobile/img_sm-@1x-3.jpg 450w,
+                        ./images/portfolio/mobile/img_sm-@2x-3.jpg 900w
+                      "
+                    />
+                    <img
+                      src="./images/portfolio/mobile/img_sm-@1x-3.jpg"
+                      sizes="(min-width: 1200px)
+                    370px, (min-width: 768px) 354px, (min-width: 450px) 450px, 100vw"
+                      alt="Навушники"
+                      class="card-img"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -221,20 +283,36 @@
             <li class="cards__item">
               <a href="#" class="cards__link link">
                 <div class="portfolio-thumb">
-                  <img
-                    srcset="
-                      ./images/portfolio/mobile/img_sm-@1x-4.jpg  450w,
-                      ./images/portfolio/mobile/img_sm-@2x-4.jpg  900w,
-                      ./images/portfolio/tablet/img_md-@1x-4.jpg  354w,
-                      ./images/portfolio/tablet/img_md-@2x-4.jpg  708w,
-                      ./images/portfolio/desktop/img_lg-@1x-4.jpg 370w,
-                      ./images/portfolio/desktop/img_lg-@2x-4.jpg 740w
-                    "
-                    src="./images/portfolio/mobile/img_sm-@1x-4.jpg"
-                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 450px) 450px, 100vw"
-                    alt="Дві коробочки різного розміру та кольору"
-                    class="card-img"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/desktop/img_lg-@1x-4.jpg 370w,
+                        ./images/portfolio/desktop/img_lg-@2x-4.jpg 740w
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/tablet/img_md-@1x-4.jpg 354w,
+                        ./images/portfolio/tablet/img_md-@2x-4.jpg 708w
+                      "
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/desktop/img_sm-@1x-4.jpg 450w,
+                        ./images/portfolio/desktop/img_sm-@2x-4.jpg 900w
+                      "
+                    />
+                    <img
+                      src="./images/portfolio/mobile/img_sm-@1x-4.jpg"
+                      sizes="(min-width: 1200px)
+                    370px, (min-width: 768px) 354px, (min-width: 450px) 450px, 100vw"
+                      alt="Дві коробочки різного розміру та кольору"
+                      class="card-img"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -253,20 +331,37 @@
             <li class="cards__item">
               <a href="#" class="cards__link link">
                 <div class="portfolio-thumb">
-                  <img
-                    srcset="
-                      ./images/portfolio/mobile/img_sm-@1x-5.jpg  450w,
-                      ./images/portfolio/mobile/img_sm-@2x-5.jpg  900w,
-                      ./images/portfolio/mobile/img_md-@1x-5.jpg  354w,
-                      ./images/portfolio/mobile/img_md-@2x-5.jpg  708w,
-                      ./images/portfolio/desktop/img_lg-@1x-5.jpg 370w,
-                      ./images/portfolio/desktop/img_lg-@2x-5.jpg 740w
-                    "
-                    src="./images/portfolio/mobile/img_sm-@1x-5.jpg"
-                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 450px) 450px, 100vw"
-                    alt="Ноутбук з відкритим лендінгом із заголовком Інспірейшен хез ноу бордерз"
-                    class="card-img"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/desktop/img_lg-@1x-5.jpg 370w,
+                        ./images/portfolio/desktop/img_lg-@2x-5.jpg 740w
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/tablet/img_md-@1x-5.jpg 354w,
+                        ./images/portfolio/tablet/img_md-@2x-5.jpg 708w
+                      "
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/mobile/img_sm-@1x-5.jpg 450w,
+                        ./images/portfolio/mobile/img_sm-@2x-5.jpg 900w
+                      "
+                    />
+                    <img
+                      src="./images/portfolio/mobile/img_sm-@1x-5.jpg"
+                      sizes="(min-width: 1200px)
+                    370px, (min-width: 768px) 354px, (min-width: 450px) 450px, 100vw"
+                      alt="Ноутбук з
+                    відкритим лендінгом із заголовком Інспірейшен хез ноу бордерз"
+                      class="card-img"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -287,20 +382,36 @@
             <li class="cards__item">
               <a href="#" class="cards__link link">
                 <div class="portfolio-thumb">
-                  <img
-                    srcset="
-                      ./images/portfolio/mobile/img_sm-@1x-6.jpg  450w,
-                      ./images/portfolio/mobile/img_sm-@2x-6.jpg  900w,
-                      ./images/portfolio/tablet/img_md-@1x-6.jpg  354w,
-                      ./images/portfolio/tablet/img_md-@2x-6.jpg  708w,
-                      ./images/portfolio/desktop/img_lg-@1x-6.jpg 370w,
-                      ./images/portfolio/desktop/img_lg-@2x-6.jpg 740w
-                    "
-                    src="./images/portfolio/mobile/img_sm-@1x-6.jpg"
-                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 450px) 450px, 100vw"
-                    alt="Розкритий друкований журнал із заголовком Лімітед Едішн"
-                    class="card-img"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/desktop/img_lg-@1x-6.jpg 370w,
+                        ./images/portfolio/desktop/img_lg-@2x-6.jpg 740w
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/tablet/img_md-@1x-6.jpg 354w,
+                        ./images/portfolio/tablet/img_md-@2x-6.jpg 708w
+                      "
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/mobile/img_sm-@1x-6.jpg 450w,
+                        ./images/portfolio/mobile/img_sm-@2x-6.jpg 900w
+                      "
+                    />
+                    <img
+                      src="./images/portfolio/mobile/img_sm-@1x-6.jpg"
+                      sizes="(min-width: 1200px)
+                    370px, (min-width: 768px) 354px, (min-width: 450px) 450px, 100vw"
+                      alt="Розкритий друкований журнал із заголовком Лімітед Едішн"
+                      class="card-img"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -319,20 +430,36 @@
             <li class="cards__item">
               <a href="#" class="cards__link link">
                 <div class="portfolio-thumb">
-                  <img
-                    srcset="
-                      ./images/portfolio/mobile/img_sm-@1x-7.jpg  450w,
-                      ./images/portfolio/mobile/img_sm-@2x-7.jpg  900w,
-                      ./images/portfolio/tablet/img_md-@1x-7.jpg  354w,
-                      ./images/portfolio/tablet/img_md-@2x-7.jpg  708w,
-                      ./images/portfolio/desktop/img_lg-@1x-7.jpg 370w,
-                      ./images/portfolio/desktop/img_lg-@2x-7.jpg 740w
-                    "
-                    src="./images/portfolio/mobile/img_sm-@1x-7.jpg"
-                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 450px) 450px, 100vw"
-                    alt="Біла бірочка із надписом Лаб Ель Таг"
-                    class="card-img"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/desktop/img_lg-@1x-7.jpg 370w,
+                        ./images/portfolio/desktop/img_lg-@2x-7.jpg 740w
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/tablet/img_md-@1x-7.jpg 354w,
+                        ./images/portfolio/tablet/img_md-@2x-7.jpg 708w
+                      "
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/mobile/img_sm-@1x-7.jpg 450w,
+                        ./images/portfolio/mobile/img_sm-@2x-7.jpg 900w
+                      "
+                    />
+                    <img
+                      src="./images/portfolio/mobile/img_sm-@1x-7.jpg"
+                      sizes="(min-width: 1200px)
+                    370px, (min-width: 768px) 354px, (min-width: 450px) 450px, 100vw"
+                      alt="Біла бірочка із надписом Лаб Ель Таг"
+                      class="card-img"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -351,20 +478,36 @@
             <li class="cards__item">
               <a href="#" class="cards__link link">
                 <div class="portfolio-thumb">
-                  <img
-                    srcset="
-                      ./images/portfolio/mobile/img_sm-@1x-8.jpg  450w,
-                      ./images/portfolio/mobile/img_sm-@2x-8.jpg  900w,
-                      ./images/portfolio/tablet/img_md-@1x-8.jpg  354w,
-                      ./images/portfolio/tablet/img_md-@2x-8.jpg  708w,
-                      ./images/portfolio/desktop/img_lg-@1x-8.jpg 370w,
-                      ./images/portfolio/desktop/img_lg-@2x-8.jpg 740w
-                    "
-                    src="./images/portfolio/mobile/img_sm-@1x-8.jpg"
-                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 450px) 450px, 100vw"
-                    alt="Чоловічі руки печатають на клавіатурі ноутбуку із лендінгом на екрані із надписом Гроувінг Бізнес"
-                    class="card-img"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/mobile/img_lg-@1x-8.jpg 370w,
+                        ./images/portfolio/mobile/img_lg-@2x-8.jpg 740w
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/tablet/img_md-@1x-8.jpg 354w,
+                        ./images/portfolio/tablet/img_md-@2x-8.jpg 708w
+                      "
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/mobile/img_sm-@1x-8.jpg 450w,
+                        ./images/portfolio/mobile/img_sm-@2x-8.jpg 900w
+                      "
+                    />
+                    <img
+                      src="./images/portfolio/mobile/img_sm-@1x-8.jpg"
+                      sizes="(min-width: 1200px)
+                    370px, (min-width: 768px) 354px, (min-width: 450px) 450px, 100vw"
+                      alt="Чоловічі руки печатають на клавіатурі ноутбуку із лендінгом на екрані із надписом Гроувінг Бізнес"
+                      class="card-img"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.

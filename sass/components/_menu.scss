@@ -83,7 +83,7 @@
 }
 
 .mobile-contacts__link--upper {
-  @include font(var(--main-font), 34px, 500, calc(40 / 34), 0.02em, var(--secondary-clr));
+  @include font(var(--main-font), 34px, 500, calc(40 / 34), 0.02em, var(--accent-clr));
 }
 .mobile-contacts__link--lower {
   @include font(var(--main-font), 24px, 500, calc(28 / 24), 0.02em, var(--secondary-clr));

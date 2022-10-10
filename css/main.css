@@ -768,7 +768,7 @@ summary {
   font-weight: 500;
   line-height: 1.1764705882;
   letter-spacing: 0.02em;
-  color: var(--secondary-clr);
+  color: var(--accent-clr);
 }
 
 .mobile-contacts__link--lower {
@@ -1628,6 +1628,19 @@ summary {
   }
 }
 
+.portfolio-thumb {
+  position: relative;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+}
+
 .cards__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1648,7 +1661,6 @@ summary {
           transition-timing-function: var(--animation-function);
 }
 .cards__link:hover, .cards__link:focus {
-  position: absolute;
   -webkit-box-shadow: var(--portfolio-card-hover);
           box-shadow: var(--portfolio-card-hover);
 }
@@ -1660,16 +1672,7 @@ summary {
 .cards__link:hover .overlay__text, .cards__link:focus .overlay__text {
   -webkit-transform: translateY(0);
           transform: translateY(0);
-}
-
-.portfolio-thumb {
-  position: relative;
-  overflow: hidden;
-}
-
-.card-img {
-  width: 100%;
-  height: auto;
+  opacity: 1;
 }
 
 .overlay::before {
@@ -1698,7 +1701,8 @@ summary {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 63px 24px;
+  padding: 77px 24px;
+  opacity: 0;
   font-family: var(--main-font);
   font-size: 18px;
   font-weight: 400;
@@ -1715,6 +1719,16 @@ summary {
           transition-timing-function: var(--animation-function);
   -webkit-transform: translateY(101%);
           transform: translateY(101%);
+}
+@media screen and (min-width: 768px) {
+  .overlay__text {
+    padding: 49px 24px 77px 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .overlay__text {
+    padding: 63px 24px;
+  }
 }
 
 .card-descr {
@@ -1821,12 +1835,14 @@ summary {
 
 .footer-form {
   margin-top: 60px;
+  width: 100%;
   margin-bottom: auto;
 }
 @media screen and (min-width: 1200px) {
   .footer-form {
     margin-top: 0;
     margin-bottom: 0;
+    width: auto;
   }
 }
 
@@ -1834,6 +1850,7 @@ summary {
   display: block;
   text-align: center;
   margin-bottom: 20px;
+  margin-left: auto;
   text-transform: uppercase;
   font-family: var(--main-font);
   font-size: 14px;
@@ -1872,6 +1889,9 @@ summary {
 .subscribe__lable {
   display: block;
   margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .subscribe__lable {
