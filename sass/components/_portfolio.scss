@@ -52,14 +52,16 @@
   flex-grow: 1;
   width: 100%;
   padding: 0;
+  margin-bottom: 30px;
 
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 30px) / 2);
+    margin-bottom: 0;
   }
 
   @media screen and (min-width: 1199px) {
     flex-basis: calc((100% - 60px) / 3);
-
+    margin-bottom: 0;
     // &:nth-child(3n) {
     //   margin-right: 0;
     // }
@@ -92,7 +94,7 @@
   &:hover,
   &:focus {
     box-shadow: var(--portfolio-card-hover);
-    .overlay::before {
+    .overlay {
       transform: translateY(0);
       opacity: 1;
     }
@@ -103,8 +105,7 @@
   }
 }
 
-.overlay::before {
-  content: '';
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -124,6 +125,7 @@
   left: 0;
   padding: 77px 24px;
   opacity: 0;
+  overflow-y: scroll;
 
   @include font(var(--main-font), 18px, 400, calc(28 / 18), 0.03em, var(--secondary-accent-clr));
   @include transition(null, null, transform, var(--animation-time), var(--animation-function));
