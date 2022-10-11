@@ -683,6 +683,15 @@ summary {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  -webkit-transition-property: fill;
+  transition-property: fill;
+  -webkit-transition-duration: var(--animation-time);
+          transition-duration: var(--animation-time);
+  -webkit-transition-timing-function: var(--animation-function);
+          transition-timing-function: var(--animation-function);
+}
+.menu-btn:hover, .menu-btn:focus {
+  fill: var(--accent-clr);
 }
 @media screen and (min-width: 768px) {
   .menu-btn {
@@ -834,9 +843,15 @@ summary {
   border: none;
   background-color: transparent;
   border: none;
+  -webkit-transition-property: fill;
+  transition-property: fill;
+  -webkit-transition-duration: var(--animation-time);
+          transition-duration: var(--animation-time);
+  -webkit-transition-timing-function: var(--animation-function);
+          transition-timing-function: var(--animation-function);
 }
 .menu-toggle:hover, .menu-toggle:focus {
-  color: var(--accent-clr);
+  fill: var(--accent-clr);
 }
 
 .hero__btn {
@@ -1104,8 +1119,8 @@ summary {
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero__overlay {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/hero/img_lg-@2x.jpg"), url("../../images/hero/img-bg2_lg-@2x.png");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero/img_lg-@2x.jpg"), url("../../images/hero/img-bg2_lg-@2x.png");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/img_lg-@2x.jpg"), url("../images/hero/img-bg2_lg-@2x.png");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/img_lg-@2x.jpg"), url("../images/hero/img-bg2_lg-@2x.png");
   }
 }
 
@@ -1620,7 +1635,6 @@ summary {
       -ms-flex-positive: 1;
           flex-grow: 1;
   width: 100%;
-  margin-bottom: 30px;
   padding: 0;
 }
 @media screen and (min-width: 768px) {
@@ -2230,7 +2244,7 @@ summary {
       -ms-flex-align: center;
           align-items: center;
   margin-right: 8.38px;
-  width: 16px;
+  min-width: 16px;
   height: 15px;
   background-size: contain;
   border: 2px solid var(--main-clr);
